@@ -1,0 +1,205 @@
+--------------------------------------------
+   Hyprland Crash Report
+--------------------------------------------
+I tried so hard, and got so far...
+
+Hyprland received signal 6 (Aborted)
+
+Version: 03ebbe18ed8517ee22591eac82cd54322f42cb7d
+Tag: v0.34.0
+
+System info:
+	System name: Linux
+	Node name: mask
+	Release: 6.7.0-arch3-1
+	Version: #1 SMP PREEMPT_DYNAMIC Sat, 13 Jan 2024 14:37:14 +0000
+
+GPU:
+	02:00.0 VGA compatible controller [0300]: NVIDIA Corporation AD106 [GeForce RTX 4060 Ti] [10de:2803] (rev a1) (prog-if 00 [VGA controller])
+
+
+os-release:
+	NAME="Arch Linux"
+	PRETTY_NAME="Arch Linux"
+	ID=arch
+	BUILD_ID=rolling
+	ANSI_COLOR="38;2;23;147;209"
+	HOME_URL="https://archlinux.org/"
+	DOCUMENTATION_URL="https://wiki.archlinux.org/"
+	SUPPORT_URL="https://bbs.archlinux.org/"
+	BUG_REPORT_URL="https://bugs.archlinux.org/"
+	PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+	LOGO=archlinux-logo
+	
+
+
+Backtrace:
+	#0 | Hyprland(_Z12getBacktracev+0x62) [0x5d217181a412]
+		??
+		??:0
+	#1 | Hyprland(_ZN13CrashReporter18createAndSaveCrashEi+0x5c5) [0x5d21717e78a5]
+		??
+		??:0
+	#2 | Hyprland(_Z25handleUnrecoverableSignali+0x4c) [0x5d21717615ec]
+		??
+		??:0
+	#3 | /usr/lib/libc.so.6(+0x3e710) [0x75460225c710]
+		??
+		??:0
+	#4 | /usr/lib/libc.so.6(+0x8e83c) [0x7546022ac83c]
+		??
+		??:0
+	#5 | /usr/lib/libc.so.6(raise+0x18) [0x75460225c668]
+		??
+		??:0
+	#6 | /usr/lib/libc.so.6(abort+0xd7) [0x7546022444b8]
+		??
+		??:0
+	#7 | /usr/lib/libc.so.6(+0x263dc) [0x7546022443dc]
+		??
+		??:0
+	#8 | /usr/lib/libc.so.6(+0x36d26) [0x754602254d26]
+		??
+		??:0
+	#9 | /usr/lib/libdrm_nouveau.so.2(+0x4c28) [0x754601319c28]
+		??
+		??:0
+	#10 | /usr/lib/libdrm_nouveau.so.2(nouveau_pushbuf_data+0x67) [0x754601319b87]
+		??
+		??:0
+	#11 | /usr/lib/libdrm_nouveau.so.2(+0x4cad) [0x754601319cad]
+		??
+		??:0
+	#12 | /usr/lib/libdrm_nouveau.so.2(+0x4f27) [0x754601319f27]
+		??
+		??:0
+	#13 | /usr/lib/libdrm_nouveau.so.2(+0x5a79) [0x75460131aa79]
+		??
+		??:0
+	#14 | /usr/lib/dri/nouveau_dri.so(+0x146a73f) [0x7545fb06a73f]
+		??
+		??:0
+	#15 | /usr/lib/dri/nouveau_dri.so(+0x9b9859) [0x7545fa5b9859]
+		??
+		??:0
+	#16 | /usr/lib/dri/nouveau_dri.so(+0x9cdf8e) [0x7545fa5cdf8e]
+		??
+		??:0
+	#17 | /usr/lib/dri/nouveau_dri.so(+0x9ce3d2) [0x7545fa5ce3d2]
+		??
+		??:0
+	#18 | /usr/lib/dri/nouveau_dri.so(+0x313e02) [0x7545f9f13e02]
+		??
+		??:0
+	#19 | /usr/lib/libwlroots.so.13032(+0x2c47a) [0x754602bc947a]
+		??
+		??:0
+	#20 | /usr/lib/libwlroots.so.13032(+0x3a6fd) [0x754602bd76fd]
+		??
+		??:0
+	#21 | /usr/lib/libwlroots.so.13032(+0x5de0c) [0x754602bfae0c]
+		??
+		??:0
+	#22 | /usr/lib/libwlroots.so.13032(wlr_output_cursor_set_buffer+0xee) [0x754602bfb1de]
+		??
+		??:0
+	#23 | /usr/lib/libwlroots.so.13032(+0x78e33) [0x754602c15e33]
+		??
+		??:0
+	#24 | /usr/lib/libwlroots.so.13032(wlr_cursor_set_xcursor+0x68) [0x754602c165b8]
+		??
+		??:0
+	#25 | /usr/lib/libwayland-server.so.0(wl_signal_emit_mutable+0x7e) [0x754602b5401e]
+		??
+		??:0
+	#26 | /usr/lib/libwlroots.so.13032(+0x7098a) [0x754602c0d98a]
+		??
+		??:0
+	#27 | /usr/lib/libffi.so.8(+0x74f6) [0x754601daa4f6]
+		??
+		??:0
+	#28 | /usr/lib/libffi.so.8(+0x3f5e) [0x754601da6f5e]
+		??
+		??:0
+	#29 | /usr/lib/libffi.so.8(ffi_call+0x123) [0x754601da9b73]
+		??
+		??:0
+	#30 | /usr/lib/libwayland-server.so.0(+0x8ada) [0x754602b52ada]
+		??
+		??:0
+	#31 | /usr/lib/libwayland-server.so.0(+0xd180) [0x754602b57180]
+		??
+		??:0
+	#32 | /usr/lib/libwayland-server.so.0(wl_event_loop_dispatch+0xa2) [0x754602b55ae2]
+		??
+		??:0
+	#33 | /usr/lib/libwayland-server.so.0(wl_display_run+0x27) [0x754602b562d7]
+		??
+		??:0
+	#34 | Hyprland(_ZN11CCompositor15startCompositorEv+0xc65) [0x5d2171762ef5]
+		??
+		??:0
+	#35 | Hyprland(main+0x727) [0x5d21717491f7]
+		??
+		??:0
+	#36 | /usr/lib/libc.so.6(+0x27cd0) [0x754602245cd0]
+		??
+		??:0
+	#37 | /usr/lib/libc.so.6(__libc_start_main+0x8a) [0x754602245d8a]
+		??
+		??:0
+	#38 | Hyprland(_start+0x25) [0x5d217175e815]
+		??
+		??:0
+
+
+Log tail:
+Input)
+[LOG] Registered signal for owner 5d21745982a0: 5d2174569be8 -> 5d2174598320 (owner: textInput)
+[LOG] Registered signal for owner 5d21745982a0: 5d2174569bf8 -> 5d21745983f0 (owner: textInput)
+[LOG] New XDG Toplevel created. (class: null)
+[LOG] Registered signal for owner 5d217454b8c0: 5d217458b0f0 -> 5d217454b928 (owner: XDG Window)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596a08 -> 5d217454b9f8 (owner: XDG Window)
+[LOG] Registered signal for owner 5d217454b8c0: 5d217458b0e0 -> 5d217454b8c0 (owner: XDG Window)
+[types/xdg_shell/wlr_xdg_surface.c:169] A configure is scheduled for an uninitialized xdg_surface 0x5d2174596960
+[LOG] Registered signal for owner 5d217454b8c0: 5d217455afa0 -> 5d217454bed8 (owner: Toplevel)
+[LOG] Registered signal for owner 5d217454b8c0: 5d217455afb0 -> 5d217454bf40 (owner: Toplevel)
+[LOG] Registered signal for owner 5d217454b8c0: 5d217455afc0 -> 5d217454be70 (owner: Toplevel)
+[LOG] Registered signal for owner 5d217454c148: 5d217458b120 -> 5d217454c160 (owner: CWLSurface)
+[LOG] CWLSurface 5d217454c148 called init()
+[LOG] Registered signal for owner 5d217454b8c0: 5d217458b100 -> 5d217454b990 (owner: CWindow)
+[LOG] Searching for matching rules for Alacritty (title: Alacritty)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d217454b8c0: title: "Alacritty"]
+[LOG] OPENINGON: [Node 5d2174504b20: workspace: 1, pos: [0.00, 40.00], size: [1599.00, 859.00], window: 5d21745804b0], Monitor: 0
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d21745804b0: title: "mask@mask:~"]
+[LOG] Set keyboard focus to surface 5d217458ae10, with [Window 5d217454b8c0: title: "Alacritty"]
+[LOG] Searching for matching rules for Alacritty (title: Alacritty)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d217454b8c0: title: "Alacritty"]
+[LOG] Window got assigned a surfaceTreeNode 0
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596c68 -> 5d217454ba60 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596a28 -> 5d217454bb98 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596bf8 -> 5d217454bcd0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596c18 -> 5d217454bc68 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596c28 -> 5d217454bc00 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596c38 -> 5d217454bd38 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596c08 -> 5d217454bb30 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d217454b8c0: 5d2174596a48 -> 5d217454c0e0 (owner: XDG Window Late)
+[LOG] Registered signal for owner 5d21743b0f60: 5d217458b110 -> 5d21743b0fe8 (owner: SurfaceTreeNode)
+[LOG] Registered signal for owner 5d21743b0f60: 5d217458b0e0 -> 5d21743b1050 (owner: SurfaceTreeNode)
+[LOG] Registered signal for owner 5d21743b0f60: 5d217458b120 -> 5d21743b10b8 (owner: SurfaceTreeNode)
+[LOG] Creating a surfaceTree Root! [Window 5d217454b8c0: title: "Alacritty"]
+[LOG] Map request dispatched, monitor DP-2, window pos: [10.00000, 50.00000], window size: [785.00000, 839.00000]
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d21745804b0: title: "mask@mask:~"]
+[LOG] Searching for matching rules for Alacritty (title: Alacritty)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d217454b8c0: title: "Alacritty"]
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 5d217454b8c0: title: "mask@mask:~"]
+[LOG] Window 5d217454b8c0 set title to mask@mask:~

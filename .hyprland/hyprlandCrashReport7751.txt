@@ -1,0 +1,204 @@
+--------------------------------------------
+   Hyprland Crash Report
+--------------------------------------------
+Oops
+
+Hyprland received signal 6 (Aborted)
+
+Version: 03ebbe18ed8517ee22591eac82cd54322f42cb7d
+Tag: v0.34.0
+
+System info:
+	System name: Linux
+	Node name: mask
+	Release: 6.7.0-arch3-1
+	Version: #1 SMP PREEMPT_DYNAMIC Sat, 13 Jan 2024 14:37:14 +0000
+
+GPU:
+	02:00.0 VGA compatible controller [0300]: NVIDIA Corporation AD106 [GeForce RTX 4060 Ti] [10de:2803] (rev a1) (prog-if 00 [VGA controller])
+
+
+os-release:
+	NAME="Arch Linux"
+	PRETTY_NAME="Arch Linux"
+	ID=arch
+	BUILD_ID=rolling
+	ANSI_COLOR="38;2;23;147;209"
+	HOME_URL="https://archlinux.org/"
+	DOCUMENTATION_URL="https://wiki.archlinux.org/"
+	SUPPORT_URL="https://bbs.archlinux.org/"
+	BUG_REPORT_URL="https://bugs.archlinux.org/"
+	PRIVACY_POLICY_URL="https://terms.archlinux.org/docs/privacy-policy/"
+	LOGO=archlinux-logo
+	
+
+
+Backtrace:
+	#0 | Hyprland(_Z12getBacktracev+0x62) [0x58c92dea6412]
+		??
+		??:0
+	#1 | Hyprland(_ZN13CrashReporter18createAndSaveCrashEi+0x5c5) [0x58c92de738a5]
+		??
+		??:0
+	#2 | Hyprland(_Z25handleUnrecoverableSignali+0x4c) [0x58c92dded5ec]
+		??
+		??:0
+	#3 | /usr/lib/libc.so.6(+0x3e710) [0x7269b516f710]
+		??
+		??:0
+	#4 | /usr/lib/libc.so.6(+0x8e83c) [0x7269b51bf83c]
+		??
+		??:0
+	#5 | /usr/lib/libc.so.6(raise+0x18) [0x7269b516f668]
+		??
+		??:0
+	#6 | /usr/lib/libc.so.6(abort+0xd7) [0x7269b51574b8]
+		??
+		??:0
+	#7 | /usr/lib/libc.so.6(+0x263dc) [0x7269b51573dc]
+		??
+		??:0
+	#8 | /usr/lib/libc.so.6(+0x36d26) [0x7269b5167d26]
+		??
+		??:0
+	#9 | /usr/lib/libdrm_nouveau.so.2(+0x4c28) [0x7269b422ec28]
+		??
+		??:0
+	#10 | /usr/lib/libdrm_nouveau.so.2(nouveau_pushbuf_data+0x67) [0x7269b422eb87]
+		??
+		??:0
+	#11 | /usr/lib/libdrm_nouveau.so.2(+0x4cad) [0x7269b422ecad]
+		??
+		??:0
+	#12 | /usr/lib/libdrm_nouveau.so.2(+0x4f27) [0x7269b422ef27]
+		??
+		??:0
+	#13 | /usr/lib/libdrm_nouveau.so.2(+0x5a79) [0x7269b422fa79]
+		??
+		??:0
+	#14 | /usr/lib/dri/nouveau_dri.so(+0x146a73f) [0x7269b2a6a73f]
+		??
+		??:0
+	#15 | /usr/lib/dri/nouveau_dri.so(+0x9b9859) [0x7269b1fb9859]
+		??
+		??:0
+	#16 | /usr/lib/dri/nouveau_dri.so(+0x9cdf8e) [0x7269b1fcdf8e]
+		??
+		??:0
+	#17 | /usr/lib/dri/nouveau_dri.so(+0x9ce3d2) [0x7269b1fce3d2]
+		??
+		??:0
+	#18 | /usr/lib/dri/nouveau_dri.so(+0x313e02) [0x7269b1913e02]
+		??
+		??:0
+	#19 | /usr/lib/libwlroots.so.13032(+0x2c47a) [0x7269b5ade47a]
+		??
+		??:0
+	#20 | /usr/lib/libwlroots.so.13032(+0x3a6fd) [0x7269b5aec6fd]
+		??
+		??:0
+	#21 | /usr/lib/libwlroots.so.13032(+0x5de0c) [0x7269b5b0fe0c]
+		??
+		??:0
+	#22 | /usr/lib/libwlroots.so.13032(wlr_output_cursor_set_buffer+0xee) [0x7269b5b101de]
+		??
+		??:0
+	#23 | /usr/lib/libwlroots.so.13032(+0x78e33) [0x7269b5b2ae33]
+		??
+		??:0
+	#24 | /usr/lib/libwlroots.so.13032(wlr_cursor_set_xcursor+0x68) [0x7269b5b2b5b8]
+		??
+		??:0
+	#25 | /usr/lib/libwayland-server.so.0(wl_signal_emit_mutable+0x7e) [0x7269b5a6901e]
+		??
+		??:0
+	#26 | /usr/lib/libwlroots.so.13032(+0x7098a) [0x7269b5b2298a]
+		??
+		??:0
+	#27 | /usr/lib/libffi.so.8(+0x74f6) [0x7269b4cbf4f6]
+		??
+		??:0
+	#28 | /usr/lib/libffi.so.8(+0x3f5e) [0x7269b4cbbf5e]
+		??
+		??:0
+	#29 | /usr/lib/libffi.so.8(ffi_call+0x123) [0x7269b4cbeb73]
+		??
+		??:0
+	#30 | /usr/lib/libwayland-server.so.0(+0x8ada) [0x7269b5a67ada]
+		??
+		??:0
+	#31 | /usr/lib/libwayland-server.so.0(+0xd180) [0x7269b5a6c180]
+		??
+		??:0
+	#32 | /usr/lib/libwayland-server.so.0(wl_event_loop_dispatch+0xa2) [0x7269b5a6aae2]
+		??
+		??:0
+	#33 | /usr/lib/libwayland-server.so.0(wl_display_run+0x27) [0x7269b5a6b2d7]
+		??
+		??:0
+	#34 | Hyprland(_ZN11CCompositor15startCompositorEv+0xc65) [0x58c92ddeeef5]
+		??
+		??:0
+	#35 | Hyprland(main+0x727) [0x58c92ddd51f7]
+		??
+		??:0
+	#36 | /usr/lib/libc.so.6(+0x27cd0) [0x7269b5158cd0]
+		??
+		??:0
+	#37 | /usr/lib/libc.so.6(__libc_start_main+0x8a) [0x7269b5158d8a]
+		??
+		??:0
+	#38 | Hyprland(_start+0x25) [0x58c92ddea815]
+		??
+		??:0
+
+
+Log tail:
+screen -> firefox matched [Window 58c93003e150: title: "Generating a new SSH key and adding it to the ssh-agent - GitHub Docs — Mozilla Firefox"]
+[LOG] Registered signal for owner 58c92f5b64b8: 58c92fcb0210 -> 58c92f5b64d0 (owner: CWLSurface)
+[LOG] CWLSurface 58c92f5b64b8 called init()
+[LOG] Callback 58c92f5b64f8 -> 58c92f5b64f0, CWLSurface removed.
+[LOG] CWLSurface 58c92f5b64b8 called destroy()
+[LOG] Registered signal for owner 58c92f5b64b8: 58c92fcb0210 -> 58c92f5b64d0 (owner: CWLSurface)
+[LOG] CWLSurface 58c92f5b64b8 called init()
+[LOG] Searching for matching rules for firefox (title: How to copy a large terminal history from Alacritty to the system clipboard - the Alacritty clipboard seems to get cut - Super User — Mozilla Firefox)
+[ERR] Regex error at *.exe
+[LOG] Window rule idleinhibit fullscreen -> firefox matched [Window 58c93003e150: title: "How to copy a large terminal history from Alacritty to the system clipboard - the Alacritty clipboard seems to get cut - Super User — Mozilla Firefox"]
+[LOG] Window 58c93003e150 set title to How to copy a large terminal history from Alacritty to the system clipboard - the Alacritty clipboard seems to get cut - Super User — Mozilla Firefox
+[LOG] Searching for matching rules for firefox (title: Configuration | Starship — Mozilla Firefox)
+[ERR] Regex error at *.exe
+[LOG] Window rule idleinhibit fullscreen -> firefox matched [Window 58c93003e150: title: "Configuration | Starship — Mozilla Firefox"]
+[LOG] Window 58c93003e150 set title to Configuration | Starship — Mozilla Firefox
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Searching for matching rules for firefox (title: Configuration | Starship — Mozilla Firefox)
+[ERR] Regex error at *.exe
+[LOG] Window rule idleinhibit fullscreen -> firefox matched [Window 58c93003e150: title: "Configuration | Starship — Mozilla Firefox"]
+[LOG] Set keyboard focus to surface 58c9306b5b10, with [Window 58c930049a70: title: "mask@mask:~/.config"]
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~/.config)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 58c930049a70: title: "mask@mask:~/.config"]
+[LOG] Callback 58c92f5b64f8 -> 58c92f5b64f0, CWLSurface removed.
+[LOG] CWLSurface 58c92f5b64b8 called destroy()
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Keybind triggered, calling dispatcher (64, , 50)
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~/.config)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 58c930049a70: title: "mask@mask:~/.config"]
+[LOG] Set keyboard focus to surface 58c92f9e6e80, with [Window 58c93003e150: title: "Configuration | Starship — Mozilla Firefox"]
+[LOG] Searching for matching rules for firefox (title: Configuration | Starship — Mozilla Firefox)
+[ERR] Regex error at *.exe
+[LOG] Window rule idleinhibit fullscreen -> firefox matched [Window 58c93003e150: title: "Configuration | Starship — Mozilla Firefox"]
+[LOG] Registered signal for owner 58c92f5b64b8: 58c92fcb0210 -> 58c92f5b64d0 (owner: CWLSurface)
+[LOG] CWLSurface 58c92f5b64b8 called init()
+[LOG] Keybind triggered, calling dispatcher (64, , 49)
+[LOG] Searching for matching rules for firefox (title: Configuration | Starship — Mozilla Firefox)
+[ERR] Regex error at *.exe
+[LOG] Window rule idleinhibit fullscreen -> firefox matched [Window 58c93003e150: title: "Configuration | Starship — Mozilla Firefox"]
+[LOG] Set keyboard focus to surface 58c9306b5b10, with [Window 58c930049a70: title: "mask@mask:~/.config"]
+[LOG] Searching for matching rules for Alacritty (title: mask@mask:~/.config)
+[ERR] Regex error at *.exe
+[LOG] Window rule opacity 0.85 0.85 -> class:^(Alacritty|code-oss)$ matched [Window 58c930049a70: title: "mask@mask:~/.config"]
+[LOG] Callback 58c92f5b64f8 -> 58c92f5b64f0, CWLSurface removed.
+[LOG] CWLSurface 58c92f5b64b8 called destroy()

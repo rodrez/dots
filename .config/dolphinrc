@@ -1,3 +1,6 @@
+[$Version]
+update_info=dolphin_detailsmodesettings.upd:rename-leading-padding,dolphin_detailsmodesettings.upd:move-content-display
+
 [General]
 Version=202
 ViewPropsTimestamp=2024,1,16,15,40,45.61
